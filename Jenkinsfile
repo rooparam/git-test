@@ -21,14 +21,18 @@ pipeline
 	    }
         stage('Three') 
 		{
-               steps
-				{
-                        echo 'Hi, this is roopa learning from edureka'
-			
+                 when 
+				 {
+                   not {
+                                branch "master"
+                        }
                 }
+                steps 
+				{
+			echo "Hello"
+                        }
         }
  
         
     }
 }
-
