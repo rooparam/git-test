@@ -1,30 +1,34 @@
-pipeline {
+pipeline 
+{
     agent any
-    stages {
-        stage('One') {
-                steps {
+    stages
+	{
+        stage('One')
+		{
+                steps
+				{
                         echo 'Hi, this is Zulaikha from edureka'
 			
                 }
         }
-	    stage('Two'){
+	    stage('Two')
+		{
 		    
-		steps {
+		steps 
+		{
 			input('Do you want to proceed?')
         }
 	    }
-        stage('Three') {
-                when {
-                        not {
-                                branch "master"
-                        }
+        stage('Three') 
+		{
+               steps
+				{
+                        echo 'Hi, this is roopa learning from edureka'
+			
                 }
-                steps {
-			echo "Hello"
-                        }
         }
  
-        }
+        
     }
 }
 
