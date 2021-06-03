@@ -24,7 +24,7 @@ pipeline
                  when 
 				 {
                    not {
-                                branch "master"
+                                branch "b1"
                         }
                 }
                 steps 
